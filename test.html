@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // document.write("say \"Hello\"");
+        var num1 = 10;
+        var num2 = 20;
+        var num3 = 3;
+        var num4 = "10";
+        var result;
+
+        // num1 += 5; // num1 = num1 + 5;
+        // num1 %= num3; // num1 = num1 % num3;
+        // result = num1 + num4;
+        // result = num1 !== num4;
+        // result = true && false || true && false;
+        // 논리 연산자
+        // result = num1 < num2 && num1 == num4 || true && false;
+        // 삼항조건 연산자
+        // result = true ? num1 : num2;
+        // document.write(result, "<br>");
+        // 질의응답 창 만들기
+        var num = prompt("숫자를 입력 하세요", "0");
+        // 2 부분에 n을 쓸 경우 나올수 있는 값은 n-1 값까지 나옴
+        // ex) 3 이면 나올수 있는 값 0, 1, 2
+        // 로또 번호 추첨 % 45 까지 해서 나온 값에 +1 하면 됨
+        result = num % 2 == 0 ? "짝수" : "홀수";
+        
+        document.write(result, "<br>");
+        // prompt,alert,confirm 팝업창 뜨는 명령어. 하지만 잘 쓰이지 않음.
+        // 팝업창이 뜨는 경우 뒤의 js는 멈추게 됨
+
+        // 자바는 변수 타입 퉁 침.
+        // 변수 형이 가변형. 
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
