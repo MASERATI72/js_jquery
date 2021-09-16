@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 의 객체</title>
+    <script>
+        // 내장 객체 생성
+        var car = new Object(); // 객체의 주소 저장
+        car.color = "white";
+        car.price = "1000만원"
+        car.getInfo = function() {
+            document("색상: ", this.color, "<br>");
+            document("가격: ", this.price, "<br>");
+        }
+
+        // 리터럴 방식의 객체 생성
+        var car = {
+            "color": "white",
+            "getInfo": function() {
+                document.write("색상: ", this.color, "<br>");
+                document.write("가격: ", this.price, "<br>");
+            }
+        }
+
+        // 내장 객체 - 날짜 정보 객체
+        var today = new Date();
+        var y = today.getFullYear();
+        var m = today.getMonth();
+        var d = today.getDate();
+        var day = today.getDay(); // 1 : 월 6 : 토
+
+        // 내장 객체 - 수학 객체
+        var num = 1.56;
+        Math.round(num);
+
+        // 내장 객체 - 문자 객체
+        var str = "hello welcome" // 각 인덱스값에 한 문자씩 들어감
+        str.charAt(6); // w
+        // str.indexOf
+
+        // 내장 객체 - 배열 객체
+        var arr1 = new Array("갑");
+
+        // 브라우저 객체
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

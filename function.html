@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <script>
+        // function greeting(name, area){
+        //     document.write("hello" + name, "<br>");
+        //     document.write("Welcome to" + area, "<br>");
+        // }
+        // greeting("hong", "korea");
+        // greeting("park", "usa");
+
+        // 스코프
+        // var num = 500; // 전역 변수
+        // function fncTest(){
+        //     var num = 200; // 지역변수  오직 함수 안에서만 저장가능?
+            
+        //     function innerFnc(){
+        //         document.write(num, "<br>");
+        //     }
+        //     innerFnc(); // 내부 함수 : 함수 안에서만 부를수 있음 
+        // }
+        // fncTest();
+        // document.write(num);
+
+        // 
+        function myFnc(num1, num2){
+            document.write("num1 + num2 = ");
+            return num1 + num2;
+            document.write("함수 종료"); // return 문 뒤의 문장은 실행 되지않음.
+            // 자바에서는 리턴문 뒤의 문장 컴파일러에서 에러로 표시해줌
+            // 자바스크립트에서는 사용자에러에가 날 가능성이 많음
+            // 장점은 그지같이 써도 실행 시켜준다
+            
+        }
+        var result = myFnc(100, 200);
+        document.write(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
